@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gaetan Bonnemberger - Portfolio{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="wrapper">
+    <h1>CityCo</h1>
+
+    <p>Ce projet a pour objectif de renforcer les liens entre les administrés et l’équipe municipale
+    pour mieux vivre au sein de la ville et de créer une communauté, un mouvement, au sein de
+    celle-ci et affirmer les valeurs de citoyenneté de chacun.
+    Pour cela nous avons voulu que chaque personne ait un moyen de communication avec la
+    mairie via un système de doléance que l’utilisateur pouvait envoyer à l’aide d’un descriptif et
+    y joindre une photo. Une fois reçu, la mairie peut dire si elle valide ou non la doléance de
+    l’utilisateur. Ce dernier pourra donc suivre l’évolution de sa doléance dans son espace
+    personnel.</p>
+    <p>Ce projet fut pensé pour les petits villages qui sont éparpillés et qui n’ont pas forcément de
+    visuel sur des choses tel que des décharges sauvages, des grillages abîmés sur des cours de
+    tennis, des dysfonctionnements de l’éclairage public ou même de la végétation qui obstrue la
+    vision d’un croisement.</p>
+    <p>Il fut aussi pensé à être le plus intuitif et le plus facile d’utilisation possible afin de toucher le
+    plus grand panel d’utilisateur possible, qu’ils aient ou non des facilités avec les technologies
+    actuelles, et l’adapter à toutes formes d’affichage. Nous avons donc pensé à concevoir ce
+    site sur format mobile, qui est le moyen le plus courant pour ce genre de requête et l’adapter
+    aux autres formes d’affichage que ce soit tablette ou ordinateur.</p>
+
+    <div class="container" id="mobilcontainerCityCo">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('assets/images/Home-CityCo.png') }}" class="card-img-top" alt="HomeCityCo">
+            <div class="card-body">
+                <p class="card-text">Une site épuré pour une facilité d'utilisation.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('assets/images/Admin.png') }}" class="card-img-top" alt="AdminDashboard">
+            <div class="card-body">
+                <p class="card-text">Le tableau de bord "Mairie" qui permet d'avoir acces aux dernieres activités ,aux dernieres doléances, pour uen facilité de gestion.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('assets/images/User.png') }}" class="card-img-top" alt="UserDashboard">
+            <div class="card-body">
+                <p class="card-text">Le tableau de bord "Utilisteur" qui permt d'avoir un rapide viduel sur les doléances et leurs états.</p>
+            </div>
+        </div>
+    </div>
+    <a href="{{ path('portfolio') }}" class="btn btn-primary w=50% mb-3">Revenir au portfolio</a>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gaetan Bonnemberger - Portfolio{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="wrapper">
+    <h1>Blog</h1>
+
+    <p>Mes premieres armes avec Symfony. C'est sur ce projet de formation que j'ai pu apprendre à mettre en place un systeme d'identification pour la premiere fois et acceder à un back-end et le faire communiquer avec le front.</p>
+    <p>Grace au systeme d'identification, un article pouvait etre publié par un utilisateur et repondu par d'autres et surveiller par un moderateur, le tout controlé par un administrateur.</p>
+    <p>Vous l'avez bien compris, ce projet était basé sur la sécurité, les permissions et la base de donnée.</p>
+
+    <div class="container" id="mobilcontainerCityCo">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('assets/images/Blog.png') }}" class="card-img-top" alt="HomeCityCo">
+            <div class="card-body">
+                <p class="card-text">Des articles triés par tags avec le nombres de reponses asssociés.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('assets/images/Blog1.png') }}" class="card-img-top" alt="AdminDashboard">
+            <div class="card-body">
+                <p class="card-text">Un formulaire de connexion et d'inscription afin de definir le role de chacuns.</p>
+            </div>
+        </div>
+    </div>
+    <a href="{{ path('portfolio') }}" class="btn btn-primary w=50% mb-3">Revenir au portfolio</a>
+</div>
+{% endblock %}

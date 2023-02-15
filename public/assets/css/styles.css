@@ -1,0 +1,94 @@
+/* ! Mobile ! */
+  
+.wrapper{
+    text-align: center;
+    margin: 1rem;
+    background-color: #f9f9f9;
+}
+
+#portrait {
+    width: -webkit-fill-available;
+    width: 70%;
+    border-radius: 10%;
+}
+
+h4{
+    font-weight: bolder;
+}
+
+.skill{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+}
+
+/* Portfolio */
+
+.card-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+.card {
+    margin: 1rem;
+}
+
+#mobilcontainerCityCo{
+    display: flex;
+    overflow-x: scroll;
+    width: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+#mobilcontainerCityCo>.card{
+    flex: 0 0 100%;
+    border-radius: 8px;
+    scroll-snap-align: start;
+  }
+
+/* Contact */
+
+.contact{
+    text-align: center;
+}
+.contact>h1{
+    margin: 1rem;
+}
+
+form {
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gaetan Bonnemberger - Portfolio{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="wrapper">
+    <h1>Trip o'dvisor</h1>
+
+    <p>Ce projet fût crée lors de ma formation de développeur. Il nous a été donné afin que nous puissions apprendre les bases de JavaScript.</p>
+
+    <p>J'ai pu apprendre à cibler un bouton afin de lui definir une action au clic comme un changement de theme (dark theme ou changement de couleur du theme general du site), faire apparaitre une pop-up à un certains niveau de scroll.</p>
+
+    <p>C'est aussi sur ce projet que j'ai pu mettre en place des connaissances en CSS, mettant en avant lien le dit CSS avec le JavaScript, comme la creation de slidders qui fait defiller les images à un temps donné ou par action de clic que les boutons de navigation.</p>
+
+    <div class="container" id="mobilcontainerCityCo">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top" alt="TripHome">
+            <div class="card-body">
+                <p class="card-text">Une home page avec l'apparition d'une pop-up definis au scroll.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('assets/images/Trip2.png') }}" class="card-img-top" alt="TripDarkmode">
+            <div class="card-body">
+                <p class="card-text">Et son dark-mode.</p>
+            </div>
+        </div>
+    </div>
+    <a href="{{ path('portfolio') }}" class="btn btn-primary w=50% mb-3">Revenir au portfolio</a>
+</div>
+{% endblock %}
