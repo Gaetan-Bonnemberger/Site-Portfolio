@@ -1,7 +1,20 @@
 /* ! Mobile ! */
 @media (max-width: 767px) {
 
-.wrapper-contact> .left{
+.wrapper-contact,
+.wrapper-portfolio > .left{
+    display: none;
+}
+.wrapper-cityCo > .left{
+    display: none;
+}
+.wrapper-trip > .left{
+    display: none;
+}
+.wrapper-blog > .left{
+    display: none;
+}
+.wrapper-contact > .left {
     display: none;
 }
 
@@ -32,6 +45,13 @@ h4{
 .wrapper-portfolio{
     text-align: center;
 }
+
+.wrapper-cityCo,
+.wrapper-trip,
+.wrapper-blog{
+    text-align: center;
+}
+
 .card-portfolio{
     display: flex;
     flex-wrap: wrap;
@@ -187,44 +207,35 @@ input[type="submit"]:hover {
         flex-wrap: wrap;    
     }
     
-    
-    /* Experience */
-    
-    #experience{
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-    
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-    
-    .card{
-        background-color: var(--color-opacity);
-    }
-    
-    .card-body{
-        background-color: #343A40;
-        margin-bottom: 2rem;
-    }
-    
-    
-    .card-subtitle{
-        margin: auto;
-    }
-    
-    .text-muted{
-        margin: auto;
-    }
+
+    /* Portfolio */
 
     .wrapper-portfolio{
         display: flex;
-        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-portfolio{
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+
+    .wrapper-cityCo,
+    .wrapper-trip,
+    .wrapper-blog {
+        display: flex;
+        text-align: center;
+    }
+
+    #mobilcontainerCityCo{
+        display: flex;
+        justify-content: space-around;
     }
 
     /* Contact */
@@ -235,4 +246,5 @@ input[type="submit"]:hover {
         text-align: center;
     }
 }
+
 
