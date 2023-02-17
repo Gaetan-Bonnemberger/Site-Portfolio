@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gaetan Bonnemberger - Portfolio{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+    <div class="wrapper-portfolio">
+    {# Coté gauche #}
+    <div class="left">
+        <h1>Bienvenue</h1>
+        <div class="portrait">
+
+            <img id="portrait" src="{{ asset('assets/images/portrait.jpg') }}" alt="photo-portrait" class="mb-3">
+            <div class="nom">
+                <h3>Gaetan Bonnemberger</h3>
+                <p class="P1"><b>Diplomé du titre professionnel</b></p>
+                <p class="P2">Développeur Web et Web Mobile</p>
+                <p class="P3">O'clock</p>
+            </div>
+        </div>
+    </div>
+    {# Coté droit #}
+    <div class="right">
+        <h1>Portfolio</h1>
+
+        <p>Retrouvez ici quelques unes de mes créations</p>
+
+        <div class="card-portfolio">
+        
+        <div class="card" style="">
+            <img id="City-co" src="{{ asset('assets/images/Home-CityCo.png') }}" class="card-img-top" alt="CityCo">
+            <div class="card-body">
+                <h5 class="card-title">City-Connect</h5>
+                <p class="card-text">Un site dédié à la communication entre une équipe municipale et les administrés via un systeme de doléance géolocalisé.</p>
+                <a href="{{ path('portfolio-CityCo') }}" class="btn btn-primary">Jeter un oeil</a>
+            </div>
+        </div>
+        <div class="card" style="">
+            <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top" alt="trip project">
+            <div class="card-body">
+                <h5 class="card-title">TripOdvisor</h5>
+                <p class="card-text">Un site de voyage que j'ai codé lors de ma formation pour le titre pro DWWM</p>
+                <a href="{{ path('portfolio-Trip') }}" class="btn btn-primary">Jeter un oeil</a>
+            </div>
+        </div>
+        <div class="card" style="">
+            <img src="{{ asset('assets/images/Blog.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Blog</h5>
+                <p class="card-text">Mes premieres armes avec Symfony basé sur un blog des articles pouvant etre trié par tag</p>
+                <a href="{{ path('portfolio-Blog') }}" class="btn btn-primary">Jeter un oeil</a>
+            </div>
+        </div> 
+        </div>
+    </div>
+{% endblock %}
