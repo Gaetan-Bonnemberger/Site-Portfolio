@@ -1,3 +1,13 @@
+/* Main page */
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
 /* ! Mobile ! */
 @media (max-width: 767px) {
 
@@ -42,6 +52,7 @@ h4{
 }
 
 /* Portfolio */
+
 .wrapper-portfolio{
     text-align: center;
 }
@@ -126,8 +137,6 @@ input[type="submit"]:hover {
 /* ! Version Tablette et + ! */
 
 @media (min-width: 768px){
-
-    /* Main page */
 
     .wrapper{
         display: flex;
