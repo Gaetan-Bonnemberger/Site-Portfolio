@@ -29,11 +29,11 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body class="light-theme">
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md ">
         <div class="container-fluid">
         {# todo Ici je pourrais y mettre un logo à la place de "menu" #}
-            <img src="{{ asset('assets/images/10876.jpg') }}" alt="Logo" width="56" height="40" class="d-inline-block align-text-top"> 
+            <img src="{{ asset('assets/images/10876.jpg') }}" alt="Logo" width="56" height="40" class="d-inline-block align-text-top" id="logo"> 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,13 @@
             <!-- On pense aussi à retirer l'élément de l'exemple "disabled" -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav ">
-                    <button <i class="bi bi-toggle-on"id="theme-btn">Changer de theme</button>
+                    <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème"><input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="label">
+                            <i class="fas fa-moon"></i>
+                            <i class='fas fa-sun'></i>
+                            <div class='ball'>
+                        </label>
+                    </button>
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ path('main') }}">Acceuil </a>
                     </li>
@@ -62,6 +68,7 @@
         <!-- On va chercher bootstrap via leur CDN -->
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="{{ asset('./assets/js/scripts.js') }}"></script>
+    <script src="{{ asset('./assets/js/app.js') }}"></script>
+    <script src="{{ asset('./assets/js/theme.js') }}"></script>
     </body>
 </html>

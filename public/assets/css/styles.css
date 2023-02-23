@@ -1,14 +1,60 @@
-/* Main page */
-body {
-    background-color: white;
-    color: black;
+/* dark mode */
+
+    .theme-dark {
+        color: white;
+        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+        background-size: cover;
+        background-position: center;
+        /* --border-normal: 1px solid rgba(255, 255, 255, .2);
+        --color-bg: rgb(15, 15, 15);
+        --color-opacity: rgba(255, 255, 255, .1); */
+    } 
+
+
+/* Bouton : Dark-Mode */
+  
+.checkbox {
+    opacity: 0;
+    position: absolute;
+    }
+
+.label {
+    width: 50px;
+    height: 26px;
+    background-color:#ccc;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
 }
 
-.dark {
-    background-color: black;
-    color: white;
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
 }
-/* ! Mobile ! */
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: whitesmoke;
+}
+
+.fa-sun {
+    color: yellow;
+}
+  
+  /* ! Mobile ! */
 @media (max-width: 767px) {
 
 .wrapper-contact,
@@ -28,10 +74,44 @@ body {
     display: none;
 }
 
+
+/* Body */
+
+/* NavBar */
+#logo{
+    margin: 1rem;
+}
+
+.navbar-toggler{
+    margin: 1rem;
+}
+
+#theme-switch{
+    margin: 1rem;
+}
+
+body.theme-dark #theme-switch{
+    margin: 1rem;
+}
+
+#navbarNav a {
+    margin: 1rem;
+    padding-left: 1rem;
+}
+body.theme-dark #navbarNav a {
+    color:white;
+}
+
+/* Warpper */
 .wrapper{
     text-align: center;
     margin: 1rem;
     background-color: #f9f9f9;
+}
+
+body.theme-dark .wrapper{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+
 }
 
 #portrait {
@@ -49,6 +129,10 @@ h4{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;    
+}
+
+body.theme-dark #skills{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 800%, rgb(0, 0, 0) 99.4%);
 }
 
 /* Portfolio */
@@ -69,8 +153,16 @@ h4{
     justify-content: center;
     background-color: #f9f9f9;
 }
+
+body.theme-dark .card-portfolio{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
 .card {
     margin: 1rem;
+}
+body.theme-dark .card {
+    color:black;
 }
 
 #mobilcontainerCityCo{
@@ -83,7 +175,7 @@ h4{
     gap: 12px;
     margin-bottom: 4rem;
     text-align: center;
-  }
+}
 
 #mobilcontainerCityCo>.card{
     flex: 0 0 100%;
@@ -91,7 +183,7 @@ h4{
     scroll-snap-align: start;
   }
 
-/* Contact */
+  /* Contact */
 
 .wrapper-contact{
     display: flex;
@@ -99,6 +191,10 @@ h4{
     align-items: center;
     text-align: center;
 }
+
+/* body.theme-dark form {
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+} */
 
 form {
     width: auto;
@@ -138,122 +234,147 @@ input[type="submit"]:hover {
 
 @media (min-width: 768px){
 
-    .wrapper{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        /* background-color: #f9f9f9; */
-    } 
-   
-
-    /* Coté gauche */
-    
-    .left{
-        width: 35%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #portrait{
-        border-radius: 13%;
-        height: 30%;
-    }
-    
-    h3{
-        font-weight: bolder;
-        
-    }
-    
-    .P1{
-        color: grey;
-    }
-    
-    .P2{
-        color: grey;
-    }
-    
-    .link a{
-        color: white;
-    }
-    
-    /* Coté droit */
-    
-    .right{
-        width: 65%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .right p{
-        padding: 0.5em 1.5em;
-    }
-    
-    .points{
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content:space-evenly;
-        margin-top: 5rem;
-    }
-    h4{
-        font-weight: bolder;
-    }
-    
-    /* Skills */
-    
-    #skills{
-        width: 100%;
-        background-color: #f9f9f9;
-        padding-block: 1rem;
-    }
-    .skill{
-        display: flex;
-        justify-content:center;
-        flex-wrap: wrap;    
-    }
-    
-
-    /* Portfolio */
-
-    .wrapper-portfolio{
-        display: flex;
-        text-align: center;
-    }
-
-    .card-portfolio{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card{
-        margin-bottom: 1rem;
-        width: 80%;
-    }
-
-    .wrapper-cityCo,
-    .wrapper-trip,
-    .wrapper-blog {
-        display: flex;
-        text-align: center;
-    }
-
-    #mobilcontainerCityCo{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    /* Contact */
-
-    .wrapper-contact{
-        display: flex;
-        flex-wrap: nowrap;
-        text-align: center;
-    }
+body.theme-dark #navbarNav{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* border-bottom: 2px solid white */
+}
+body.theme-dark #navbarNav a {
+    color:white;
 }
 
+/* Body */
+
+.wrapper{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+}  
+
+/* Coté gauche */
+    
+.left{
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+#portrait{
+    border-radius: 13%;
+    height: 30%;
+}
+
+h3{
+    font-weight: bolder;
+    
+}
+
+.P1{
+    color: grey;
+}
+
+.P2{
+    color: grey;
+}
+
+.link a{
+    color: white;
+}
+
+/* Coté droit */
+
+.right{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right p{
+    padding: 0.5em 1.5em;
+}
+
+.points{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 5rem;
+}
+h4{
+    font-weight: bolder;
+}
+
+/* Skills */
+
+#skills{
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-block: 1rem;
+}
+body.theme-dark #skills{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 800%, rgb(0, 0, 0) 99.4%);
+}
+
+.skill{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;    
+}
+
+
+/* Portfolio */
+
+.wrapper-portfolio{
+    display: flex;
+    text-align: center;
+}
+
+.card-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+body.theme-dark .card{
+    color: black
+}
+
+.wrapper-cityCo,
+.wrapper-trip,
+.wrapper-blog {
+    display: flex;
+    text-align: center;
+}
+
+#mobilcontainerCityCo{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Contact */
+
+.wrapper-contact{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+}
+
+
+/* ! Dark Mode ! */
 
