@@ -68,12 +68,12 @@ const theme = {
         // Si isDark contient true, on applique le thème sombre
         if(isDark) {
             document.body.classList.add('theme-dark');
+            // Avoir le bouton de switch qui persiste suivant le light ou darkmode
+            document.getElementById('checkbox').checked = true;
         }
 
-
         // On veut aussi vérifier que localStorage contient une information sur un potentiel theme de couleur choisi
-        const savedColorTheme = localStorage.getItem('colorTheme');
-        
+        const savedColorTheme = localStorage.getItem('colorTheme'); 
 
         // Si savedColorTheme contient quelque chose, alors on applique le theme contenu à la page
         // Si la variable savedColorTheme contient une string, c'est une valeur "considérée comme vraie" (truthy). Donc la condition sera effective si savecColorTheme ne contient pas du vide.
@@ -81,15 +81,13 @@ const theme = {
             
             // On passe le nom du theme sauvegardé à la fonction dont c'est le role de l'afficher
             theme.changeColorTheme(savedColorTheme);
-
         }
-
     },
 
     // Méthode qui modifie le DOM afin d'afficher un thème de couleur reçu en paramètre
     changeColorTheme: function(colorTheme) {
 
-
+        
         // Méthode subtile @copyright Xavier
         // On parcourt la liste des classes du body
         for (const item of document.body.classList) {
