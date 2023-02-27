@@ -151,6 +151,21 @@ body.theme-dark #skills{
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 800%, rgb(0, 0, 0) 99.4%);
 }
 
+/* Exprerience */
+#experience{
+    margin-top: 1rem;
+}
+
+.card-body{
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+body.theme-dark .card-body{
+    background-color: #343A40;
+}
+
 /* Portfolio */
 
 .wrapper-portfolio{
@@ -270,7 +285,6 @@ body.theme-dark #navbarNav{
     list-style: none;
     flex-wrap: nowrap;
     align-items: center;
-    /* border-bottom: 2px solid white */
 }
 
 body.theme-dark #navbarNav a {
@@ -287,7 +301,7 @@ body.theme-dark #navbarNav a:hover {
 
 }
 
-/* Body */
+/* Body ?*/
 
 .wrapper{
         display: flex;
@@ -373,9 +387,53 @@ body.theme-dark #skills{
 
 .skill{
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     flex-wrap: wrap;    
 }
+
+/* Experience */
+
+#experience{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} */
+
+.card-exp{
+    background-color: var(--color-opacity);
+
+}
+
+.card-body{
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+body.theme-dark .card-body{
+    background-color: #343A40;
+}
+
+
+.card-subtitle{
+    margin: auto;
+}
+
+.text-muted{
+    margin: auto;
+}
+
+/* body.theme-dark .text-muted{
+    display: ;
+} */
 
 
 /* Portfolio */
@@ -423,6 +481,8 @@ body.theme-dark .card{
     flex-wrap: nowrap;
     text-align: center;
 }
+
+
 
 
 }
