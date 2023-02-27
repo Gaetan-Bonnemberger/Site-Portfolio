@@ -46,32 +46,30 @@
 }
 
 .fa-moon {
-    color: whitesmoke;
+    color: #ffffff;
 }
 
 .fa-sun {
     color: yellow;
 }
+
+/* ! Code général ! */
+
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media > a{
+    color: black;
+}
+
+body.theme-dark .social-media > a{
+    color: whitesmoke;   
+}
   
   /* ! Mobile ! */
 @media (max-width: 767px) {
-
-.wrapper-contact,
-.wrapper-portfolio > .left{
-    display: none;
-}
-.wrapper-cityCo > .left{
-    display: none;
-}
-.wrapper-trip > .left{
-    display: none;
-}
-.wrapper-blog > .left{
-    display: none;
-}
-.wrapper-contact > .left {
-    display: none;
-}
 
 /* Body */
 
@@ -119,6 +117,10 @@ body.theme-dark .wrapper{
 
 h4{
     font-weight: bolder;
+}
+
+.social-media{
+    margin-bottom: 1rem;
 }
 
 .skill{
@@ -230,6 +232,10 @@ input[type="submit"]:hover {
 
 @media (min-width: 768px){
 
+#navbarNav a {
+    color:black;
+}
+
 body.theme-dark #navbarNav{
     display: -ms-flexbox;
     display: flex;
@@ -282,9 +288,6 @@ h3{
     color: grey;
 }
 
-.link a{
-    color: white;
-}
 
 /* Coté droit */
 
