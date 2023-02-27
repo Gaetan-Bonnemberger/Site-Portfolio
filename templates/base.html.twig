@@ -30,7 +30,7 @@
         {% endblock %}
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-expand-md ">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
         {# todo Ici je pourrais y mettre un logo à la place de "menu" #}
             <img src="{{ asset('assets/images/10876.jpg') }}" alt="Logo" width="56" height="40" class="d-inline-block align-text-top" id="logo"> 
@@ -39,8 +39,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Ici on ajoute la classe justify-content-end pour aligner les éléments de menu sur la droite -->
-            <!-- On pense aussi à retirer l'élément de l'exemple "disabled" -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème"><input type="checkbox" class="checkbox" id="checkbox">
                         <label for="checkbox" class="label">

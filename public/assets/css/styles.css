@@ -62,10 +62,28 @@
 
 .social-media > a{
     color: black;
+    padding: 1rem;  
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.social-media > a:hover{
+    background: transparent;
+    -webkit-box-shadow: offset-x 3px 0px 12px 3px re; 
+    box-shadow:  3px 0px 12px 3px gray;
+    border-radius: 5px; 
 }
 
 body.theme-dark .social-media > a{
-    color: whitesmoke;   
+    color: whitesmoke;
+    padding: 1rem;  
+}
+
+body.theme-dark .social-media a:hover {
+    background: transparent;
+    -webkit-box-shadow: offset-x 3px 0px 12px 3px white; 
+    box-shadow:  3px 0px 12px 3px gray;
+    border-radius: 5px; 
 }
   
   /* ! Mobile ! */
@@ -232,8 +250,15 @@ input[type="submit"]:hover {
 
 @media (min-width: 768px){
 
+/* NavBar */
 #navbarNav a {
     color:black;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+#navbarNav a:hover{
+    box-shadow:  3px 0px 12px 3px gray;
 }
 
 body.theme-dark #navbarNav{
@@ -247,8 +272,19 @@ body.theme-dark #navbarNav{
     align-items: center;
     /* border-bottom: 2px solid white */
 }
+
 body.theme-dark #navbarNav a {
     color:white;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body.theme-dark #navbarNav a:hover {
+    background: transparent;
+    -webkit-box-shadow: offset-x 3px 0px 12px 3px white; 
+    box-shadow:  3px 0px 12px 3px gray;
+    border-radius: 5px; 
+
 }
 
 /* Body */
@@ -273,6 +309,13 @@ body.theme-dark #navbarNav a {
 #portrait{
     border-radius: 13%;
     height: 30%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 8, 0.2);
+}
+
+#portrait:hover{
+    background: transparent;
+    -webkit-box-shadow: offset-x 3px 0px 12px 3px white; 
+    box-shadow:  3px 0px 12px 3px gray;
 }
 
 h3{
@@ -280,10 +323,7 @@ h3{
     
 }
 
-.P1{
-    color: grey;
-}
-
+.P1,
 .P2{
     color: grey;
 }
@@ -308,7 +348,14 @@ h3{
     flex-direction: row;
     justify-content:space-evenly;
     margin-top: 5rem;
+    width: 95%;
+    background-color: #f9f9f9;
 }
+
+body.theme-dark .points{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 800%, rgb(0, 0, 0) 99.4%);
+}
+
 h4{
     font-weight: bolder;
 }
@@ -342,15 +389,19 @@ body.theme-dark #skills{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    
 }
 
 .card{
     margin-bottom: 1rem;
     width: 80%;
+    box-shadow:  5px 3px 5px 1px gray;
 }
 
 body.theme-dark .card{
     color: whitesmoke;
+    box-shadow: none;
 }
 
 .wrapper-cityCo,
