@@ -1,15 +1,14 @@
-/* dark mode */
+/*! dark mode !*/
 
-    .theme-dark {
-        color: white;
-        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-        background-size: cover;
-        background-position: center;
-        /* --border-normal: 1px solid rgba(255, 255, 255, .2);
-        --color-bg: rgb(15, 15, 15);
-        --color-opacity: rgba(255, 255, 255, .1); */
-    } 
-
+.theme-dark {
+    color: whitesmoke;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background-size: cover;
+    background-position: center;
+    /* --border-normal: 1px solid rgba(255, 255, 255, .2);
+    --color-bg: rgb(15, 15, 15);
+    --color-opacity: rgba(255, 255, 255, .1); */
+} 
 
 /* Bouton : Dark-Mode */
   
@@ -74,7 +73,6 @@
     display: none;
 }
 
-
 /* Body */
 
 /* NavBar */
@@ -99,10 +97,10 @@ body.theme-dark #theme-switch{
     padding-left: 1rem;
 }
 body.theme-dark #navbarNav a {
-    color:white;
+    color:whitesmoke;
 }
 
-/* Warpper */
+/* Wrapper */
 .wrapper{
     text-align: center;
     margin: 1rem;
@@ -111,14 +109,12 @@ body.theme-dark #navbarNav a {
 
 body.theme-dark .wrapper{
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-
 }
 
 #portrait {
     width: -webkit-fill-available;
     width: 70%;
-    border-radius: 10%;
-    
+    border-radius: 10%;  
 }
 
 h4{
@@ -151,7 +147,7 @@ body.theme-dark #skills{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 
 body.theme-dark .card-portfolio{
@@ -161,8 +157,11 @@ body.theme-dark .card-portfolio{
 .card {
     margin: 1rem;
 }
+
 body.theme-dark .card {
-    color:black;
+    color:whitesmoke;
+    background-size: cover;
+    background-position: center;
 }
 
 #mobilcontainerCityCo{
@@ -186,22 +185,19 @@ body.theme-dark .card {
   /* Contact */
 
 .wrapper-contact{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-/* body.theme-dark form {
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-} */
-
 form {
     width: auto;
     margin: auto;
     padding: 20px;
     margin-bottom: 2rem;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -351,7 +347,7 @@ body.theme-dark #skills{
 }
 
 body.theme-dark .card{
-    color: black
+    color: whitesmoke;
 }
 
 .wrapper-cityCo,
@@ -373,8 +369,6 @@ body.theme-dark .card{
     flex-wrap: nowrap;
     text-align: center;
 }
+
+
 }
-
-
-/* ! Dark Mode ! */
-
