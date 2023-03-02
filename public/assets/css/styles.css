@@ -352,8 +352,10 @@ h3{
     align-items: center;
 }
 
-.right p{
-    padding: 0.5em 1.5em;
+/* Apropos */
+
+.Apropos{
+    margin-bottom: 1rem;
 }
 
 .points{
@@ -380,6 +382,7 @@ h4{
     width: 100%;
     background-color: #f9f9f9;
     padding-block: 1rem;
+    margin-top: 1rem;
 }
 body.theme-dark #skills{
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 800%, rgb(0, 0, 0) 99.4%);
@@ -399,13 +402,6 @@ body.theme-dark #skills{
     align-items: center;
     margin-top: 1rem;
 }
-
-/* .row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-} */
 
 .card-exp{
     background-color: var(--color-opacity);
