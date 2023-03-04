@@ -314,7 +314,7 @@ body.theme-dark #navbarNav a:hover {
     
 .left{
     width: 35%;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -356,6 +356,11 @@ h3{
 
 .Apropos{
     margin-bottom: 1rem;
+    padding-right: 3rem;
+}
+
+.Apropos > h3 {
+    margin-bottom: 1rem;
 }
 
 .points{
@@ -363,8 +368,8 @@ h3{
     width: 100%;
     flex-direction: row;
     justify-content:space-evenly;
-    margin-top: 5rem;
-    width: 95%;
+    margin-top: 3rem;
+    /* width: 95%; */
     background-color: #f9f9f9;
 }
 
@@ -412,12 +417,14 @@ body.theme-dark #skills{
     background-color: #f9f9f9;
     margin-bottom: 2rem;
     padding: 1rem;
+    border-left: #343A40 2px solid;
 }
 
 body.theme-dark .card-body{
     background-color: #343A40;
+    border-left:whitesmoke 2px solid ;
 }
-
+/* Dark orange :#DD6421 */
 
 .card-subtitle{
     margin: auto;
