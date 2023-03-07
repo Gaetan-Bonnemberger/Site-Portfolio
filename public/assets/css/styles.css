@@ -69,7 +69,7 @@
 
 .social-media > a:hover{
     background: transparent;
-    -webkit-box-shadow: offset-x 3px 0px 12px 3px re; 
+    -webkit-box-shadow: offset-x 3px 0px 12px 3px; 
     box-shadow:  3px 0px 12px 3px gray;
     border-radius: 5px; 
 }
@@ -301,7 +301,7 @@ body.theme-dark #navbarNav a:hover {
 
 }
 
-/* Body ?*/
+/* Body */
 
 .wrapper{
         display: flex;
@@ -333,8 +333,7 @@ body.theme-dark #navbarNav a:hover {
 }
 
 h3{
-    font-weight: bolder;
-    
+    font-weight: bolder;    
 }
 
 .P1,
@@ -388,7 +387,9 @@ h4{
     background-color: #f9f9f9;
     padding-block: 1rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
+
 body.theme-dark #skills{
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 800%, rgb(0, 0, 0) 99.4%);
 }
@@ -397,6 +398,30 @@ body.theme-dark #skills{
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;    
+}
+
+.skill >div a{
+    color: black;
+    background-color: transparent;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.skill div:hover{
+    background: transparent;
+    -webkit-box-shadow: offset-x 3px 0px 12px 3px;  
+    box-shadow:  3px 10px 12px 3px gray;
+    border-radius: 5px; 
+}
+
+body.theme-dark .skill >div {
+    color: whitesmoke;
+}
+
+body.theme-dark .skill div:hover {
+    background: transparent; 
+    -webkit-box-shadow: offset-x 3px 0px 12px 3px white;
+    box-shadow:  3px 0px 12px 3px gray;
+    border-radius: 5px; 
 }
 
 /* Experience */
@@ -410,7 +435,6 @@ body.theme-dark #skills{
 
 .card-exp{
     background-color: var(--color-opacity);
-
 }
 
 .card-body{
@@ -424,19 +448,10 @@ body.theme-dark .card-body{
     background-color: #343A40;
     border-left:whitesmoke 2px solid ;
 }
-/* Dark orange :#DD6421 */
 
 .card-subtitle{
     margin: auto;
 }
-
-.text-muted{
-    margin: auto;
-}
-
-/* body.theme-dark .text-muted{
-    display: ;
-} */
 
 
 /* Portfolio */
@@ -449,9 +464,7 @@ body.theme-dark .card-body{
 .card-portfolio{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
-    
+    justify-content: center;   
 }
 
 .card{
