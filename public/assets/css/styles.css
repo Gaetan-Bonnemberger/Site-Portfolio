@@ -544,6 +544,11 @@ body.theme-dark .card{
 }
 
 
+/* Footer */
 
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+  }
 
 }
