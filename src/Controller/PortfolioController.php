@@ -29,15 +29,25 @@ class PortfolioController extends AbstractController
     }
 
     /**
-     * @Route("/portfolio/trip", name="portfolio-Trip")
+     * @Route("/portfolio/Oflix", name="portfolio-Oflix")
      */
-    public function trip(): Response
+    public function oflix(): Response
     {
-        return $this->render('portfolio/trip.html.twig', [
+        return $this->render('portfolio/oflix.html.twig', [
             'controller_name' => 'PortfolioController',
         ]);
     }
 
+    /**
+     * @Route("/portfolio/Oshoes", name="portfolio-Oshoes")
+     */
+    public function oshoes(): Response
+    {
+        return $this->render('portfolio/oshoes.html.twig', [
+            'controller_name' => 'PortfolioController',
+        ]);
+    }
+    
     /**
      * @Route("/portfolio/blog", name="portfolio-Blog")
      */
@@ -47,4 +57,15 @@ class PortfolioController extends AbstractController
             'controller_name' => 'PortfolioController',
         ]);
     }
+
+    /**
+     * @Route("/portfolio/trip", name="portfolio-Trip")
+     */
+    public function trip(): Response
+    {
+        return $this->render('portfolio/trip.html.twig', [
+            'controller_name' => 'PortfolioController',
+        ]);
+    }
+
 }
