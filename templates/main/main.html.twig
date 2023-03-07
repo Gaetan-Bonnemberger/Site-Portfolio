@@ -71,7 +71,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4">
-                <h2>Experience</h2>
+                <h2 class="sticky">Experience</h2>
                 </div>
 
 
@@ -80,18 +80,25 @@
                     <div class="row-experience">
                         <div class="card-exp">
 
-                            <div class="card-body">
-                                <h5 class="card-subtitle mt-0 mb1">City-Connect</h5>
-                                <h6 class="card-subtitle ">BYS Connect</h6>
-                                <div class="exp-meta mb-3">2022-présent</div>
-                                <p>Etude de projet: Estimation du projet et rédaction du cahier des charges, maquettages du projet via Balsamik.</p> 
-                                <p>Etablir le MVP (minimum viable project).</p>
-                                <p>Conception du projet : mise en place d'une interface utilisateur dynamique et adaptable</p>
-                                <p>Création de la base de données et son utilisation pour communiquer avec le Front.</p>
-                                <p>Elaboration d'un back-end dynamique pour la gestion de contenu.</p>
-                                <p>Product owner & de git master</p>
-                            </div>
+                            <a href="{{ path('portfolio-CityCo') }}" class="card-link">
+                                <div class="card-body">
+                                    <h5 class="card-subtitle mt-0 mb1">City-Connect</h5>
+                                    <h6 class="card-subtitle ">BYS Connect</h6>
+                                    <div class="exp-meta mb-3">2022-présent</div>
+                                    <p>Etude de projet: Estimation du projet et rédaction du cahier des charges, maquettages du projet via Balsamik.</p> 
+                                    <p>Etablir le MVP (minimum viable project, Methode Agile).</p>
+                                    <p>Conception du projet : mise en place d'une interface utilisateur dynamique et adaptable</p>
+                                    <p>Integration d'une API et son widget</p>
+                                    <p>Création de la base de données et son utilisation pour communiquer avec le Front.</p>
+                                    <p>Elaboration d'un back-end dynamique pour la gestion de contenu.</p>
+                                    <p>Product owner & de git master</p>
+                                    <div class="preview-container">
+                                        <img src="{{ asset('assets/images/Home-CityCo.png') }}" class="preview img-fluid rounded" alt="Preview">
+                                    </div>
+                                </div>
+                            </a>
 
+                            <a href="{{ path('portfolio-CityCo') }}" class="card-link">
                             <div class="card-body">
                                 <h5 class="card-subtitle mt-0 mb1">Projet site de streaming (formation)</h5>
                                 <h6 class="card-subtitle">O'clock</h6>
@@ -102,8 +109,13 @@
                                 <p>Amelioration du Front-End avec des fonctionnalités de theme switcher, notations des films etc...</p>
                                 <p>Securité du site</p>
                                 <p>Deploiement</p>
+                                <div class="preview-container">
+                                    <img src="" class="preview" alt="Preview">
+                                </div>
                             </div>
+                            </a>
 
+                            <a href="{{ path('portfolio-Blog') }}" class="card-link">
                             <div class="card-body">
                                 <h5 class="card-subtitle mt-0 mb1">Projet d'un blog FAQ (formation)</h5>
                                 <h6 class="card-subtitle">O'clock</h6>
@@ -114,8 +126,12 @@
                                 <p>Elaboration d'un espace "Admin"</p>
                                 <p>Amelioration du front end avec un systeme de "j'aime"</p>
                                 <p>Elaboration d'un back-end dynamique pour la gestion de contenu.</p>
+                                <div class="preview-container">
+                                    <img src="{{ asset('assets/images/Blog.png') }}" class="preview" alt="Preview">
+                                </div>
                             </div>
 
+                            <a href="{{ path('portfolio-Blog') }}" class="card-link">
                             <div class="card-body">
                                 <h5 class="card-subtitle mt-0 mb1">Projet site d'Ecommerce (formation)</h5>
                                 <h6 class="card-subtitle">O'clock</h6>
@@ -126,19 +142,29 @@
                                 <p>Creation d'un Front-end</p>
                                 <p>Securité du site</p>
                                 <p>Travail en methode Agile</p>
+                                <div class="preview-container">
+                                    <img src="" class="preview" alt="Preview">
+                                </div>
                             </div>
+                            </a>
 
+                            <a href="{{ path('portfolio-Blog') }}" class="card-link">
                             <div class="card-body">
                                 <h5 class="card-subtitle mt-0 mb1">Projet site de voyage (formation)</h5>
                                 <h6 class="card-subtitle">O'clock</h6>
                                 <div class="exp-meta mb-3">2022</div>
                                 <p>Integration du HTML/CSS</p> 
                                 <p>Creation d'un front end complet (newsletter, dark theme etc.)</p>
+                                <div class="preview-container">
+                                    <img src="{{ asset('assets/images/Trip1.png') }}" class="preview" alt="Preview">
+                                </div>
                             </div>
+                            </a>
 
                         </div>                    
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
