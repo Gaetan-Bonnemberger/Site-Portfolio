@@ -85,6 +85,10 @@ body.theme-dark .social-media a:hover {
     box-shadow:  3px 0px 12px 3px gray;
     border-radius: 5px; 
 }
+
+a {
+    text-decoration: none;
+}
   
   /* ! Mobile ! */
 @media (max-width: 767px) {
@@ -307,22 +311,26 @@ body.theme-dark #navbarNav a:hover {
         display: flex;
         justify-content: center;
         text-align: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap;    
 }  
 
 /* Coté gauche */
     
 .left{
     width: 35%;
-    height: 75vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-    
+
+.portrait{
+    height: 100%;
+}
+
 #portrait{
     border-radius: 13%;
-    height: 30%;
+    height: 50%;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 8, 0.2);
 }
 
@@ -413,7 +421,7 @@ body.theme-dark #skills{
     border-radius: 5px; 
 }
 
-body.theme-dark .skill >div {
+body.theme-dark .skill >div a{
     color: whitesmoke;
 }
 
@@ -549,6 +557,12 @@ body.theme-dark .card{
 .footer{
     display: flex;
     justify-content: space-evenly;
-  }
+}
+.footer a{
+    color: black;
+}
+body.theme-dark .footer a {
+    color: whitesmoke;
+}
 
 }

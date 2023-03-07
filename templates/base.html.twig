@@ -71,38 +71,37 @@
 
         {# Coté gauche #}
         <div class="left">
-        <h1>Bienvenue</h1>
-            <div class="portrait">
-    
-                <img id="portrait" src="{{ asset('assets/images/portrait.jpg') }}" alt="photo-portrait" class="mb-3">
-    
-                <div class="nom">
-                    <h3>Gaetan Bonnemberger</h3>
-                    <p class="P1"><b>Diplomé du titre professionnel</b></p>
-                    <p class="P2">Développeur Web et Web Mobile</p>
-                    <p class="P3">O'clock</p>
-                </div>
-    
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/gaetan-bonnemberger" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
-                    <a href="https://github.com/Gaetan-Bonnemberger" target="_blank"><i class="fab fa-2x fa-github"></i></a>
-                    <a href="https://twitter.com/GBonnemberger" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
-                    <a href="{{ path('contact') }}"><i class="fas fa-envelope fa-2x"></i></a>
-                    <a href="tel:+33614352845"><i class="fas fa-phone fa-2x"></i></a>
+            <h1>Bienvenue</h1>
+                <div class="portrait">
+        
+                    <img id="portrait" src="{{ asset('assets/images/portrait.jpg') }}" alt="photo-portrait" class="mb-3">
+        
+                    <div class="nom">
+                        <h3>Gaetan Bonnemberger</h3>
+                        <p class="P1"><b>Diplomé du titre professionnel</b></p>
+                        <p class="P2">Développeur Web et Web Mobile</p>
+                        <p class="P3">O'clock</p>
                     </div>
-                    
-            </div>
+        
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/gaetan-bonnemberger" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+                        <a href="https://github.com/Gaetan-Bonnemberger" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+                        <a href="https://twitter.com/GBonnemberger" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a href="{{ path('contact') }}"><i class="fas fa-envelope fa-2x"></i></a>
+                        <a href="tel:+33614352845"><i class="fas fa-phone fa-2x"></i></a>
+                    </div>
+                        
+                </div>
         </div>
         {# Coté droit #}
         <div class="right">
         
-        {% block body %}{% endblock %}
     
+        {% block body %}{% endblock %}
     {# Footer #}
-    <footer>
-        <div class="footer">
-            <li>© 2022 Gaetan Bonnemberger</li>
-            <li> Mentions Légales</li>
+    <footer class="footer">
+        <div>
+            © 2022 Gaetan Bonnemberger | <a href="">Mentions Légales</a>
         </div>
     </footer>
         <!-- On va chercher bootstrap via leur CDN -->
@@ -111,4 +110,5 @@
     <script src="{{ asset('./assets/js/app.js') }}"></script>
     <script src="{{ asset('./assets/js/theme.js') }}"></script>
     </body>
+
 </html>
