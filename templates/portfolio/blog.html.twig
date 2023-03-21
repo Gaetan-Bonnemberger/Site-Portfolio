@@ -10,23 +10,36 @@
 
     {# Coté droit #}
     <h1>Blog</h1>
+    <div class ="description">
 
-    <p>Mes premieres armes avec Symfony. C'est sur ce projet de formation que j'ai pu apprendre à mettre en place un systeme d'identification pour la premiere fois et acceder à un back-end et le faire communiquer avec le front.</p>
-    <p>Grace au systeme d'identification, un article pouvait etre publié par un utilisateur et repondu par d'autres et surveiller par un moderateur, le tout controlé par un administrateur.</p>
-    <p>Vous l'avez bien compris, ce projet était basé sur la sécurité, les permissions et la base de donnée.</p>
+        <p>Découvrez mon projet de formation qui m'a permis de maîtriser Symfony et de réaliser un système d'identification sécurisé, le tout avec un design attractif grâce à HTML/CSS et Bootstrap.</p>
+
+        <p>Grâce à mes compétences en Symfony, j'ai pu créer un système de publication d'articles avec des réponses d'utilisateurs, tout en garantissant la sécurité des données et en offrant des permissions adaptées à chaque rôle, que ce soit un simple utilisateur, un modérateur ou un administrateur.</p>
+
+        <p>Avec l'utilisation de Twig, j'ai pu créer des modèles réutilisables et facilement adaptables pour garantir une expérience utilisateur optimale. En outre, l'ajout de fonctionnalités interactives en JavaScript a permis de rendre l'interface utilisateur plus attrayante et plus conviviale.</p>
+
+        <p>En tant que développeur maitrisant les bases de données, j'ai utilisé MySQL (MariaDB) pour stocker les données et les gérer efficacement. J'ai travaillé sur la sécurisation de la base de données, en utilisant notamment des requêtes préparées pour éviter les attaques par injection SQL</p>
+
+        <p>Grâce à mes compétences en sécurité, j'ai pu mettre en place des fonctionnalités de sécurité avancées pour garantir la confidentialité et l'intégrité des données. Le système d'identification sécurisé que j'ai créé repose notamment sur l'utilisation de tokens générés à chaque connexion, qui permettent de garantir l'authenticité de chaque utilisateur et d'éviter les attaques par vol de session.J'ai aussi utilisé les voters de Symfony pour gérer les autorisations d'accès à différentes parties du site en fonction du rôle de l'utilisateur connecté. Cette approche a permis de garantir une sécurité accrue en empêchant les utilisateurs non autorisés d'accéder à des fonctionnalités sensibles telles que la modification ou la suppression de contenus</p>
+
+    </div>
 
     <div class="container" id="mobilcontainerCityCo">
-        <div class="card" style="width: 18rem;">
-            <img src="{{ asset('assets/images/Blog.png') }}" class="card-img-top" alt="HomeCityCo">
-            <div class="card-body">
+        <div class="card">
+            <img src="{{ asset('assets/images/Blog.png') }}" class="card-img-top fullscreen-img" alt="HomeCityCo">
+            <div class="card-portfolio">
                 <p class="card-text">Des articles triés par tags avec le nombres de reponses asssociés.</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="{{ asset('assets/images/Blog1.png') }}" class="card-img-top" alt="AdminDashboard">
-            <div class="card-body">
+        <div class="card">
+            <img src="{{ asset('assets/images/Blog1.png') }}" class="card-img-top fullscreen-img" alt="AdminDashboard">
+            <div class="card-portfolio">
                 <p class="card-text">Un formulaire de connexion et d'inscription afin de definir le role de chacuns.</p>
             </div>
+        </div>
+            <div id="fullscreen-modal" class="fullscreen-modal">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="fullscreen-img">
         </div>
     </div>
     <a href="{{ path('portfolio') }}" class="btn btn-primary w=50% mb-3">Revenir au portfolio</a>

@@ -12,24 +12,34 @@
     
     <h1>Trip o'dvisor</h1>
 
-    <p>Ce projet fût crée lors de ma formation de développeur. Il nous a été donné afin que nous puissions apprendre les bases de JavaScript.</p>
+    <div class ="description">
 
-    <p>J'ai pu apprendre à cibler un bouton afin de lui definir une action au clic comme un changement de theme (dark theme ou changement de couleur du theme general du site), faire apparaitre une pop-up à un certains niveau de scroll.</p>
+        <p>Ce projet a été créé lors de ma formation de développeur et m'a permis de plonger dans les technologies de programmation telles que le framework Bootstrap et JS.</p>
 
-    <p>C'est aussi sur ce projet que j'ai pu mettre en place des connaissances en CSS, mettant en avant lien le dit CSS avec le JavaScript, comme la creation de slidders qui fait defiller les images à un temps donné ou par action de clic que les boutons de navigation.</p>
+        <p>Avec l'aide de ces technologies, j'ai appris à créer des interactions fascinantes pour donner vie à un site web. J'ai utilisé des techniques telles que le ciblage de boutons spécifiques pour leur attribuer des actions clés, comme le changement de thème ou l'affichage de pop-ups en fonction du défilement de l'utilisateur.</p>
+
+        <p>Le front-end est un élément crucial de tout projet web, et j'ai mis en œuvre mes compétences en CSS pour créer des éléments graphiques incroyables. J'ai développé des sliders pour faire défiler des images à un intervalle de temps spécifique ou en réponse à des actions de clic, ainsi que des boutons de navigation élégants et intuitifs en liant le CSS avec le JavaScript.</p>
+        
+        <p>En résumé, ce projet m'a permis de découvrir les merveilles de la programmation front-end et de mettre en pratique mes compétences en Bootstrap et en JS pour créer des expériences utilisateur remarquables et donner vie à des sites web.</p>
+
+    </div>
 
     <div class="container" id="mobilcontainerCityCo">
-        <div class="card" style="width: 18rem;">
-            <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top" alt="TripHome">
-            <div class="card-body">
+        <div class="card">
+            <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top fullscreen-img" alt="TripHome">
+            <div class="card-portfolio">
                 <p class="card-text">Une home page avec l'apparition d'une pop-up definis au scroll.</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="{{ asset('assets/images/Trip2.png') }}" class="card-img-top" alt="TripDarkmode">
-            <div class="card-body">
+        <div class="card">
+            <img src="{{ asset('assets/images/Trip2.png') }}" class="card-img-top fullscreen-img" alt="TripDarkmode">
+            <div class="card-portfolio">
                 <p class="card-text">Et son dark-mode.</p>
             </div>
+        </div>
+        <div id="fullscreen-modal" class="fullscreen-modal">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="fullscreen-img">
         </div>
     </div>
     <a href="{{ path('portfolio') }}" class="btn btn-primary w=50% mb-3">Revenir au portfolio</a>
