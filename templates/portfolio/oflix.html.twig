@@ -12,24 +12,44 @@
     
     <h1>O'flix</h1>
 
-    <p>lorem</p>
+    <div class ="description">
 
-    <p>lorem</p>
+        <p>O'flix est un projet de formation que j'ai réalisé pour créer un site de streaming vidéo. Pour cela, j'ai intégré un HTML et CSS brut pour ensuite dynamiser le tout en utilisant une base de données MariaDB (MySQL) gérée avec Doctrine et l'API OMDB. J'ai conçu un back-end sécurisé pour les administrateurs et les modérateurs, leur permettant de gérer facilement les commentaires et l'ajout de films.</p>
 
-    <p>lorem</p>
+        <p>Ensuite, j'ai créé un front-end dynamique en JavaScript pour donner vie au site avec un système de favoris et de notation. J'ai également ajouté un changement de thème pour améliorer l'expérience utilisateur. Tout cela a été développé en suivant le pattern MVC pour garantir une architecture solide et facile à maintenir.</p>
+
+        <p>Une fois le développement terminé, j'ai déployé le site en ligne pour qu'il soit accessible au public. Ce projet m'a permis d'acquérir des compétences en développement web full-stack.</p>
+
+    </div>
 
     <div class="container" id="mobilcontainerCityCo">
-        <div class="card" style="width: 18rem;">
-            <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top" alt="TripHome">
-            <div class="card-body">
-                <p class="card-text">Une home page avec l'apparition d'une pop-up definis au scroll.</p>
+        <div class="card">
+            <img src="{{ asset('assets/images/Oflix-home1.png') }}" class="card-img-top fullscreen-img" alt="TripHome">
+            <div class="card-portfolio">
+                <p class="card-text">Une home page avec une liste des genres,des nouveauté,ici avec ele theme "Allociné"</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="{{ asset('assets/images/Trip2.png') }}" class="card-img-top" alt="TripDarkmode">
-            <div class="card-body">
-                <p class="card-text">Et son dark-mode.</p>
+        <div class="card">
+            <img src="{{ asset('assets/images/OflixThemeLight-Connection.png') }}" class="card-img-top fullscreen-img" alt="TripDarkmode">
+            <div class="card-portfolio">
+                <p class="card-text">Le formualire de connexion avec le theme "Allociné"</p>
             </div>
+        </div>
+        <div class="card">
+            <img src="{{ asset('assets/images/Oflix-ShowMovie.png') }}" class="card-img-top fullscreen-img" alt="TripDarkmode">
+            <div class="card-portfolio">
+                <p class="card-text">Un zoom sur un film ainsi que le site avec le theme "Netflix"</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ asset('assets/images/Oflix-home.png') }}" class="card-img-top fullscreen-img" alt="TripDarkmode">
+            <div class="card-portfolio">
+                <p class="card-text">La home page avec le théme "Netflix"</p>
+            </div>
+        </div>
+        <div id="fullscreen-modal" class="fullscreen-modal">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="fullscreen-img">
         </div>
     </div>
     <a href="{{ path('portfolio') }}" class="btn btn-primary w=50% mb-3">Revenir au portfolio</a>

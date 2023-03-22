@@ -7,17 +7,6 @@ const theme = {
         const themeBtnElement = document.querySelector('#theme-switch');
         themeBtnElement.addEventListener('click', theme.toggleDarkTheme);
 
-
-        // On sélectionne l'ensemble des pastilles de couleur pour les surveiller
-        const colorButtonsElements = document.querySelectorAll('.theme-button');
-
-        // Pour chaque bouton sélectionné et se trouvant dans le tableau colorButtonsElements, on place un écouteur
-        for (const currentButton of colorButtonsElements) {
-            
-            currentButton.addEventListener('click', theme.handleThemeColorClick)
-
-        }
-
         // Au chargement de la page, on exécute la méthode initLocalState qui se charge de vérifier dans le localStorage si on n'a pas un theme déjà sauvegardé
         theme.initLocalState();
 
@@ -100,9 +89,9 @@ const theme = {
 
         // On ajoute la classe du thème sur le body
         document.body.classList.add(colorTheme);
-
+        
         // On modifie l'attribut src avec le nouveau chemin généré pour le thème actuel
-        logoElement.src = logoUrl;
+        // logoElement.src = logoUrl;
 
     }
 
