@@ -73,9 +73,61 @@
                 <div class="col-12 col-lg-4">
                 <h2 class="sticky">Experience</h2>
                 </div>
+                {# Dérouler CV Mobil #}
+                <div class="mobilExp">
+                   <div class="container-mobilExp">  
+                        <div class="cardExp">
+                            <div class="card-body">
+                                <img src="{{ asset('assets/images/Home-CityCo.png') }}" class="card-img-top" alt="CityCo-Home"/>
+                                <h5 class="card-title">CityCo</h5>
+                                <p class="card-text">Notre projet de citoyenneté numérique permet aux administrés de communiquer facilement avec la mairie pour signaler des problèmes dans leur ville grâce à une plateforme intuitive et adaptative. Technologies utilisées : HTML/CSS, Bootstrap, JS, Symfony/Twig et API.</p>
+                                <a href="{{ path('portfolio-CityCo') }}" class="btn btn-primary">Jeter un oeil</a>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="container-mobilExp" >  
+                        <div class="cardExp">
+                            <div class="card-body">
+                                <img src="{{ asset('assets/images/Oflix-ShowMovie.png') }}" class="card-img-top" alt="Oflix-ShowMovie"/>
+                                <h5 class="card-title">Oflix</h5>
+                                <p class="card-text">Site de streaming vidéo avec back-end sécurisé et front-end dynamique en JavaScript. Développé en MVC avec Symfony et une base de données MariaDB et l'API OMDB.</p>
+                                <a href="{{ path('portfolio-Oflix') }}" class="btn btn-primary">Jeter un oeil</a>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="container-mobilExp">  
+                        <div class="cardExp">
+                            <div class="card-body">
+                                <img src="{{ asset('assets/images/Blog.png') }}" class="card-img-top" alt="Blog-FAQ"/>
+                                <h5 class="card-title">Blog FAQ</h5>
+                                <p class="card-text">Programmé avec HTML/CSS et Bootstrap combinés pour créer un système d'identification sécurisé avec des permissions adaptées pour chaque rôle. Interaction conviviale grâce à JavaScript, stockage efficace de données en MySQL, sécurité renforcée avec tokens et voters Symfony</p>
+                                <a href="{{ path('portfolio-Blog') }}" class="btn btn-primary">Jeter un oeil</a>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="container-mobilExp">  
+                    <div class="cardExp">
+                        <div class="card-body">
+                            <img src="{{ asset('assets/images/Oshoes-home.png') }}" class="card-img-top" alt="O'shoes-home"/>
+                            <h5 class="card-title">Oshoes</h5>
+                            <p class="card-text">Site de commerce électronique de chaussures programmé avec HTML, CSS, JavaScript et PHP. Implémentation d'une architecture MVC pour améliorer les performances et la maintenance du site, et fonctionnalités dynamiques en utilisant JavaScript. Conception d'un back-end sécurisé.</p>
+                            <a href"{{ path('portfolio-Oshoes') }}" class="btn btn-primary">Jeter un oeil</a>
+                        </div>
+                    </div>   
+                    </div>
+                    <div class="container-mobilExp">  
+                        <div class="cardExp">
+                            <div class="card-body">
+                                <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top" alt="Trip-Home"/>
+                                <h5 class="card-title">Trip O'dvisor</h5>
+                                <p class="card-text">Site de voyage programmé avec Bootstrap et JS pour créer des interactions fascinantes et des expériences utilisateur remarquables tel que le changement de théme, les alertes et newsletter</p>
+                                <a href="{{ path('portfolio-Trip') }}" class="btn btn-primary">Jeter un oeil</a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
 
-
-                {# Dérouler CV #}
+                {# Dérouler CV Deskop#}
                 <div class="col-12 col-lg-8">
                     <div class="row-experience">
                         <div class="card-exp">
@@ -110,7 +162,7 @@
                                 <p>Securité du site</p>
                                 <p>Deploiement</p>
                                 <div class="preview-container">
-                                    <img src="{{ asset('assets/images/Oflix-home.png') }}" class="preview" alt="Preview">
+                                    <img src="{{ asset('assets/images/Oflix-ShowMovie.png') }}" class="preview" alt="Preview">
                                 </div>
                             </div>
                             </a>
