@@ -134,6 +134,17 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer a{
+    color: black;
+}
+body.theme-dark .footer a {
+    color: whitesmoke;
+}
   
   /* ! Mobile ! */
 @media (max-width: 767px) {
@@ -699,19 +710,6 @@ body.theme-dark .card:hover {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
-}
-
-/* Footer */
-
-.footer{
-    display: flex;
-    justify-content: space-evenly;
-}
-.footer a{
-    color: black;
-}
-body.theme-dark .footer a {
-    color: whitesmoke;
 }
 
 }
