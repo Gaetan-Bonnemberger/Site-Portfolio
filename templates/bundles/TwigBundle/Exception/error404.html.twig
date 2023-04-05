@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gaetan Bonnemberger - Erreur 404{% endblock %}
+
+{% block body %}
+<div class="right">
+    <div class="my-5 py-5 text-center">
+        <img src="https://assets.stickpng.com/images/5a81af7d9123fa7bcc9b0793.png" height="100" alt="warning" class="mb-3">
+        <h1 class="display-6 fw-bold">Page non trouvée !</h1>
+        <div class="NotFound">
+            <p class="lead mb-4">La page que vous avez demandé n'existe pas ...</p>
+
+            <img src="https://i.gifer.com/18UX.gif" alt="">
+            <p class="mt-5">Ce n'est pas la page que vous recherchez.</p>
+
+            <a href="{{ path('main') }}" class="btn btn-primary">Retour à l'accueil</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
