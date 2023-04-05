@@ -13,3 +13,6 @@ function init() {
 
 // Pour attendre que la page soit vraiment totalement chargée, on place un écouteur d'événements sur le document. On lui demande d'écouter l'événement DOMContentLoaded qui est émis une fois que toute la page est bien chargée.
 document.addEventListener('DOMContentLoaded', init);
+
+
+  
