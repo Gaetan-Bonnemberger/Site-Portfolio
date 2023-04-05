@@ -8,53 +8,55 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-    <div class="wrapper-portfolio">
-    {# Coté gauche #}
-    <div class="left">
-        <h1>Bienvenue</h1>
-        <div class="portrait">
-
-            <img id="portrait" src="{{ asset('assets/images/portrait.jpg') }}" alt="photo-portrait" class="mb-3">
-            <div class="nom">
-                <h3>Gaetan Bonnemberger</h3>
-                <p class="P1"><b>Diplomé du titre professionnel</b></p>
-                <p class="P2">Développeur Web et Web Mobile</p>
-                <p class="P3">O'clock</p>
-            </div>
-        </div>
-    </div>
     {# Coté droit #}
-    <div class="right">
+    
         <h1>Portfolio</h1>
 
         <p>Retrouvez ici quelques unes de mes créations</p>
 
         <div class="card-portfolio">
         
-        <div class="card" style="">
-            <img id="City-co" src="{{ asset('assets/images/Home-CityCo.png') }}" class="card-img-top" alt="CityCo">
-            <div class="card-body">
-                <h5 class="card-title">City-Connect</h5>
-                <p class="card-text">Un site dédié à la communication entre une équipe municipale et les administrés via un systeme de doléance géolocalisé.</p>
-                <a href="{{ path('portfolio-CityCo') }}" class="btn btn-primary">Jeter un oeil</a>
+            <div class="card-project">
+                <img id="City-co" src="{{ asset('assets/images/Home-CityCo.png') }}" class="card-img-top" alt="CityCo">
+                <div class="card-bodyPort">
+                    <h5 class="card-title">City-Connect</h5>
+                    <p class="card-text">Un site dédié à la communication entre une équipe municipale et les administrés via un systeme de doléance géolocalisé.</p>
+                    <a href="{{ path('portfolio-CityCo') }}" class="btn btn-primary mb-3">Jeter un oeil</a>
+                </div>
+            </div>
+            <div class="card-project">
+                <img src="{{ asset('assets/images/Oflix-ShowMovie.png') }}" class="card-img-top" alt="Oflix">
+                <div class="card-bodyPort">
+                    <h5 class="card-title">O'flix</h5>
+                    <p class="card-text">Un site de streaming</p>
+                    <a href="{{ path('portfolio-Oflix') }}" class="btn btn-primary mb-3">Jeter un oeil</a>
+                </div>
+            </div>
+            <div class="card-project">
+                <img src="{{ asset('assets/images/Blog.png') }}" class="card-img-top" alt="...">
+                <div class="card-bodyPort">
+                    <h5 class="card-title">Blog FAQ</h5>
+                    <p class="card-text">Mes premieres armes avec Symfony basé sur un blog des articles pouvant etre trié par tags</p>
+                    <a href="{{ path('portfolio-Blog') }}" class="btn btn-primary mb-3">Jeter un oeil</a>
+                </div>
+            </div>
+            <div class="card-project">
+                <img src="{{ asset('assets/images/Oshoes-home.png') }}" class="card-img-top" alt="...">
+                <div class="card-bodyPort">
+                    <h5 class="card-title">O'shoes</h5>
+                    <p class="card-text">Site E-Commerce dédié à la vente de chaussure</p>
+                    <a href="{{ path('portfolio-Oshoes') }}" class="btn btn-primary mb-3">Jeter un oeil</a>
+                </div>
+            </div> 
+            <div class="card-project">
+                <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top" alt="trip project">
+                <div class="card-bodyPort">
+                    <h5 class="card-title">TripOdvisor</h5>
+                    <p class="card-text">Un site de voyage que j'ai codé lors de ma formation pour le titre pro DWWM</p>
+                    <a href="{{ path('portfolio-Trip') }}" class="btn btn-primary mb-3">Jeter un oeil</a>
+                </div>
             </div>
         </div>
-        <div class="card" style="">
-            <img src="{{ asset('assets/images/Trip1.png') }}" class="card-img-top" alt="trip project">
-            <div class="card-body">
-                <h5 class="card-title">TripOdvisor</h5>
-                <p class="card-text">Un site de voyage que j'ai codé lors de ma formation pour le titre pro DWWM</p>
-                <a href="{{ path('portfolio-Trip') }}" class="btn btn-primary">Jeter un oeil</a>
-            </div>
-        </div>
-        <div class="card" style="">
-            <img src="{{ asset('assets/images/Blog.png') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Blog</h5>
-                <p class="card-text">Mes premieres armes avec Symfony basé sur un blog des articles pouvant etre trié par tag</p>
-                <a href="{{ path('portfolio-Blog') }}" class="btn btn-primary">Jeter un oeil</a>
-            </div>
-        </div> 
-        </div>
+        <a href="{{ path('main') }}" class="btn btn-success w=50% mb-3">Retour à l'acceuil</a>
     </div>
 {% endblock %}

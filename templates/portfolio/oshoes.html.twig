@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gaetan Bonnemberger - Portfolio{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+    {# Coté droit #}
+    
+    <h1>O'shoes</h1>
+
+    <div class ="description">
+
+        <p>O'Shoes est un projet e-commerce que j'ai développé pendant ma formation de développeur web. Il s'agit d'une plateforme de vente en ligne de chaussures. Le site permet aux utilisateurs de parcourir les différents modèles et marques de chaussures et d'effectuer facilement des achats en ligne grâce à un système de paiement sécurisé.</p>
+
+        <p>J'ai conçu O'Shoes en mettant en avant les bonnes pratiques de développement web, en utilisant des technologies telles que HTML, CSS, JavaScript, et PHP pour assurer une interface utilisateur attrayante, une navigation fluide, et une gestion efficace des transactions en ligne. J'ai également utilisé la méthodologie Agile pour garantir une approche itérative et collaborative tout au long du processus de développement.</p>
+
+        <p>Pour améliorer les performances du site, j'ai implémenté une architecture MVC pour séparer les différentes parties du code et améliorer la maintenance du site. J'ai également utilisé JavaScript pour ajouter des fonctionnalités dynamiques telles que des filtres de recherche, des suggestions de produits similaires et des notifications de panier. </p>
+
+        <p>En utilisant le langage de programmation PHP, j'ai créé un back-end qui permet aux administrateurs de se connecter et d'ajouter de nouveaux produits, de modifier les informations sur les produits existants et de supprimer les produits obsolètes. Grâce à une base de données bien conçue, ces modifications sont automatiquement mises à jour sur le site. Cela permet aux utilisateurs de bénéficier des dernières informations sur les produits disponibles, ce qui est essentiel pour un site de commerce électronique en constante évolution.</p>
+
+    </div>
+
+    <div class="container" id="mobilcontainerCityCo">
+        <div class="card">
+            <img src="{{ asset('assets/images/Oshoes-home.png') }}" class="card-img-top fullscreen-img" alt="TripHome">
+            <div class="card-portfolio">
+                <p class="card-text">Une home page épurée,intuitive avec une bonne visualisation des produits.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ asset('assets/images/Oshoes-category.png') }}" class="card-img-top fullscreen-img" alt="TripDarkmode">
+            <div class="card-portfolio">
+                <p class="card-text">L'acces au categorie avec des images en grands formats afin d'avoir un meilleur visuel.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ asset('assets/images/Oshoes-categoryFocused.png') }}" class="card-img-top fullscreen-img" alt="TripDarkmode">
+            <div class="card-portfolio">
+                <p class="card-text">Des menus déroulant présentant les differents menus afin de cibler nos envies.</p>
+            </div>
+        </div>
+            <div id="fullscreen-modal" class="fullscreen-modal">
+            <span class="close-btn">&times;</span>
+            <img class="modal-content" id="fullscreen-img">
+        </div>
+    </div>
+    <a href="{{ path('portfolio') }}" class="btn btn-primary w-50% mb-3 scroll-link save-scroll">Revenir au portfolio</a>
+
+
+
+</div>
+{% endblock %}
