@@ -184,6 +184,15 @@ body.theme-dark .wrapper{
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
 }
 
+/* Acceuil */
+
+#BannerWeb{
+    width: -webkit-fill-available;
+}
+
+
+/* Présentation */
+
 #portrait {
     width: -webkit-fill-available;
     width: 70%;
@@ -272,7 +281,7 @@ body.theme-dark .mobilExp{
 
 .container-mobilExp> .cardExp > .card-body> a{
     position: absolute;
-    bottom: 10px;
+    bottom: -10px;
     left: 100px;     
 }
 
@@ -480,6 +489,37 @@ h4{
     align-items: center;
 }
 
+/* Home */
+
+#BannerWeb{
+    height: 35%;
+    width: auto;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.home{
+    height: 100vh;
+}
+
+.professionnel {
+    text-align: left;
+    width: 95%;
+}
+
+.professionnel > h3 {
+    margin-top: 2rem;
+}
+
+.professionnel > h4 {
+    margin-bottom: 1rem;
+}
+
+#logoGB{
+    height: 15%;
+    width: auto;
+}
+
 /* Apropos */
 
 .Apropos{
@@ -491,6 +531,8 @@ h4{
     margin-bottom: 1rem;
 }
 
+
+/* Presentation */
 .points{
     display: flex;
     width: 100%;
